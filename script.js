@@ -63,7 +63,8 @@ function getCategoryData(catId) {
 
 function handleData(myData) {
     myData.forEach(showEvent)
-    fetch("http://www.nasehorn.com/huset_wp/wp-json/wp/v2/event?_embed&per_page=100&categories=" + catId)
+    fetch("http://www.nasehorn.com/huset_wp/wp-json/wp/v2/event?_embed&per_page=100&categories=" + catId);
+
     fetch("http://www.nasehorn.com/huset_wp/wp-json/wp/v2/event?_embed&per_page=100&tags=" + catId)
 }
 
